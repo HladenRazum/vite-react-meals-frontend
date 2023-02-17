@@ -6,18 +6,16 @@ const getRoutes = (): JSX.Element[] => {
 
    for (const route in ROUTES) {
       if (route in ROUTES) {
-         const { path, component } = ROUTES[route as keyof typeof ROUTES];
+         const { path, element } = ROUTES[route as keyof typeof ROUTES];
+
          const props = {
             key: path,
             path,
-            component,
+            element,
          };
+
          paths.push(
-            <Route
-               key={props.path}
-               path={props.path}
-               element={props.component()}
-            />
+            <Route key={props.path} path={props.path} element={props.element} />
          );
       }
    }

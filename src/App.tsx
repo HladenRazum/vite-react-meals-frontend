@@ -1,4 +1,4 @@
-import { Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import NavigationWrapper from "./components/Layout/NavigationWrapper/NavigationWrapper";
 import LayoutWrapper from "./components/Layout/LayoutWrapper/LayoutWrapper";
 import getRoutes from "./utils/getRoutes";
@@ -8,7 +8,10 @@ function App() {
       <div>
          <LayoutWrapper>
             <NavigationWrapper>
-               <Routes>{getRoutes()}</Routes>
+               <Routes>
+                  {getRoutes()}
+                  <Route path="*" element={<h1>Not found</h1>} />
+               </Routes>
             </NavigationWrapper>
          </LayoutWrapper>
       </div>
