@@ -1,12 +1,16 @@
 .wrapper {
-   max-width: 500px;
-   margin: auto;
    display: flex;
    flex-direction: column;
 }
 
+.wrappedWidth {
+   max-width: var(--tablet);
+   margin: auto;
+}
+
 .formGroup {
-   margin-bottom: var(--mb-sm);
+   position: relative;
+   margin-bottom: var(--spacing-md);
    display: flex;
    flex-direction: column;
    width: 100%;
@@ -14,7 +18,11 @@
 
 label {
    display: block;
-   margin-bottom: var(--mb-sm);
-   color: black;
+   margin-bottom: var(--spacing-sm);
+   color: var(--secondary-textColor);
    font-weight: 700;
+}
+
+.fullWidth {
+   width: 100%;
 }

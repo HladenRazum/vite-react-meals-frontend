@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { NavLink } from "../../../types/NavLink";
+import Logo from "../atoms/Logo/Logo";
+import "./Navigation.css";
 
 type NavigationProps = {
    links: NavLink[];
@@ -11,15 +13,20 @@ const Navigation: React.FC<NavigationProps> = ({ links }) => {
    }
 
    return (
-      <nav>
-         <ul>
-            {links.map((link) => (
-               <li key={link.name}>
-                  <Link to={link.to}>{link.name}</Link>
-               </li>
-            ))}
-         </ul>
-      </nav>
+      <div className="Navigation">
+         <div className="inner wrappedWidth">
+            <Logo />
+            <nav>
+               <ul>
+                  {links.map((link) => (
+                     <li key={link.name}>
+                        <Link to={link.to}>{link.name}</Link>
+                     </li>
+                  ))}
+               </ul>
+            </nav>
+         </div>
+      </div>
    );
 };
 

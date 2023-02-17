@@ -1,10 +1,12 @@
 button[type="submit"] {
-   all: unset;
    background-color: var(--primary);
    color: var(--btn-textColor);
-   padding: 10px 22px;
+   padding: 14px;
+   border: 0;
    border-radius: 4px;
    cursor: pointer;
+   font-size: inherit;
+   margin-top: 1em;
 }
 
 button[type="submit"]:focus {

@@ -2,12 +2,12 @@
 
 @import url("./_palette.css");
 @import url("./_globals.css");
-@import url("./_navigation.css");
 @import url("./_error_message.css");
 @import url("./_dimentions.css");
 @import url("./_input.css");
 @import url("./_form.css");
 @import url("./_button.css");
+@import url("./_typography.css");
 
 body {
    font-family: "Merriweather", serif;

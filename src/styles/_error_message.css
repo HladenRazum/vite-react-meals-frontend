@@ -1,6 +1,7 @@
 .error {
+   font-size: 14px;
+   bottom: -32px;
    color: var(--error-textColor);
-   margin: 0;
+   position: absolute;
    display: inline-block;
-   margin-left: 1em;
 }

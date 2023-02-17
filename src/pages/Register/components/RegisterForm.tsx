@@ -39,7 +39,9 @@ const RegisterForm: React.FC = () => {
             />
             <p className="error">{errors.password?.message}</p>
          </div>
-         <button type="submit">Register</button>
+         <button className="fullWidth" type="submit">
+            SignUp
+         </button>
       </form>
    );
 };

@@ -1,19 +1,23 @@
 :root {
+   --black: #000000;
    --darkGrey: #202020;
    --white: #fafafa;
-   --lightRed: #ff1212;
+   --lightRed: #f72121;
    --darkRed: #270101;
    --darkBlue: #000065;
    --darkerBlue: #000040;
    --lightBlue: #aeafff;
+   --transparent-grey: rgba(153, 151, 151, 0.673);
 }
 
 :root {
    --primary-bgColor: var(--darkGrey);
    --primary-textColor: var(--white);
+   --secondary-textColor: var(--black);
    --error-textColor: var(--lightRed);
    --error-bgColor: var(--darkRed);
    --primary: var(--darkBlue);
    --primary-darken: var(--darkerBlue);
    --btn-textColor: var(--lightBlue);
+   --border-color: var(--transparent-grey);
 }
