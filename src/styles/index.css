@@ -1,8 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap");
+
 @import url("./_palette.css");
 @import url("./_globals.css");
 @import url("./_navigation.css");
+@import url("./_error_message.css");
+@import url("./_dimentions.css");
+@import url("./_input.css");
+@import url("./_form.css");
+@import url("./_button.css");
 
 body {
+   font-family: "Merriweather", serif;
    margin: 0;
    background-color: var(--primary-bgColor);
    color: var(--primary-textColor);

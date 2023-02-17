@@ -1,0 +1,6 @@
+.error {
+   color: var(--error-textColor);
+   margin: 0;
+   display: inline-block;
+   margin-left: 1em;
+}

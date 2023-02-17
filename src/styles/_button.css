@@ -1,0 +1,16 @@
+button[type="submit"] {
+   all: unset;
+   background-color: var(--primary);
+   color: var(--btn-textColor);
+   padding: 10px 22px;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+button[type="submit"]:focus {
+   outline: auto;
+}
+
+button[type="submit"]:hover {
+   background-color: var(--primary-darken);
+}

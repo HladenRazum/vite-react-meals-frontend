@@ -2,3 +2,12 @@
    max-width: 500px;
    margin: auto;
 }
+
+.formGroup {
+   margin-bottom: var(--mb-sm);
+}
+
+label {
+   display: block;
+   margin-bottom: var(--mb-sm);
+}

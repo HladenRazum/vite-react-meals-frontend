@@ -1,9 +1,19 @@
 :root {
    --darkGrey: #232322;
    --white: #fafafa;
+   --lightRed: #ff1212;
+   --darkRed: #270101;
+   --darkBlue: #000065;
+   --darkerBlue: #000040;
+   --lightBlue: #aeafff;
 }
 
 :root {
    --primary-bgColor: var(--darkGrey);
    --primary-textColor: var(--white);
+   --error-textColor: var(--lightRed);
+   --error-bgColor: var(--darkRed);
+   --primary: var(--darkBlue);
+   --primary-darken: var(--darkerBlue);
+   --btn-textColor: var(--lightBlue);
 }
