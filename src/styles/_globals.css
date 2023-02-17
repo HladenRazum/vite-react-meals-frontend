@@ -1,13 +1,20 @@
 .wrapper {
    max-width: 500px;
    margin: auto;
+   display: flex;
+   flex-direction: column;
 }
 
 .formGroup {
    margin-bottom: var(--mb-sm);
+   display: flex;
+   flex-direction: column;
+   width: 100%;
 }
 
 label {
    display: block;
    margin-bottom: var(--mb-sm);
+   color: black;
+   font-weight: 700;
 }

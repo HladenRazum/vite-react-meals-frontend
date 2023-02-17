@@ -20,7 +20,7 @@ const RegisterForm: React.FC = () => {
    return (
       <form onSubmit={handleSubmit(onSubmit)}>
          <div className="formGroup">
-            <label htmlFor="username">Username: </label>
+            <label htmlFor="username">Username</label>
             <input
                type="text"
                placeholder="username"
@@ -30,7 +30,7 @@ const RegisterForm: React.FC = () => {
             <p className="error">{errors.username?.message}</p>
          </div>
          <div className="formGroup">
-            <label htmlFor="password">Password: </label>
+            <label htmlFor="password">Password</label>
             <input
                type="text"
                placeholder="password"
