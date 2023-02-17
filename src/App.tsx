@@ -1,13 +1,16 @@
 import { Routes } from "react-router-dom";
-import Wrapper from "./components/Layout/Wrapper/Wrapper";
+import NavigationWrapper from "./components/Layout/NavigationWrapper/NavigationWrapper";
+import LayoutWrapper from "./components/Layout/LayoutWrapper/LayoutWrapper";
 import getRoutes from "./utils/getRoutes";
 
 function App() {
    return (
       <div>
-         <Wrapper>
-            <Routes>{getRoutes()}</Routes>
-         </Wrapper>
+         <LayoutWrapper>
+            <NavigationWrapper>
+               <Routes>{getRoutes()}</Routes>
+            </NavigationWrapper>
+         </LayoutWrapper>
       </div>
    );
 }

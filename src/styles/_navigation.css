@@ -1,0 +1,13 @@
+nav ul {
+   list-style: none;
+   display: flex;
+   padding: 0;
+}
+
+nav li {
+   margin-right: 1em;
+}
+
+nav a {
+   color: rgb(147, 147, 255);
+}

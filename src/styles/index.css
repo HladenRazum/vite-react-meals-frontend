@@ -1,5 +1,6 @@
 @import url("./_palette.css");
 @import url("./_globals.css");
+@import url("./_navigation.css");
 
 body {
    margin: 0;
