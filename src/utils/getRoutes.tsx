@@ -1,31 +1,7 @@
 import { Route } from "react-router-dom";
-import Home from "../pages/Home/Home";
-import Register from "../pages/Register/Register";
+import { ROUTES } from "./routes";
 
-type Route = {
-   path: string;
-   component: () => JSX.Element;
-};
-
-type Routes = Record<RouteName, Route>;
-
-export const ROUTES: Routes = {
-   home: {
-      path: "/",
-      component: Home,
-   },
-   register: {
-      path: "/register",
-      component: Register,
-   },
-};
-
-export enum RouteName {
-   Home = "home",
-   Register = "register",
-}
-
-export const getRoutes = (): JSX.Element[] => {
+const getRoutes = (): JSX.Element[] => {
    const paths: JSX.Element[] = [];
 
    for (const route in ROUTES) {
@@ -45,6 +21,8 @@ export const getRoutes = (): JSX.Element[] => {
          );
       }
    }
-   console.log(paths);
+
    return paths;
 };
+
+export default getRoutes;

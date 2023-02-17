@@ -1,0 +1,9 @@
+:root {
+   --darkGrey: #232322;
+   --white: #fafafa;
+}
+
+:root {
+   --primary-bgColor: var(--darkGrey);
+   --primary-textColor: var(--white);
+}

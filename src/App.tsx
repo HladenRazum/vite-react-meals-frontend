@@ -1,10 +1,13 @@
 import { Routes } from "react-router-dom";
-import { getRoutes } from "./utils/routes";
+import Wrapper from "./components/Layout/Wrapper/Wrapper";
+import getRoutes from "./utils/getRoutes";
 
 function App() {
    return (
       <div>
-         <Routes>{getRoutes()}</Routes>
+         <Wrapper>
+            <Routes>{getRoutes()}</Routes>
+         </Wrapper>
       </div>
    );
 }

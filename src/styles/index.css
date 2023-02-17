@@ -1,3 +1,8 @@
+@import url("./_palette.css");
+@import url("./_globals.css");
+
 body {
    margin: 0;
+   background-color: var(--primary-bgColor);
+   color: var(--primary-textColor);
 }
