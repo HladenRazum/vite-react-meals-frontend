@@ -1,4 +1,5 @@
 :root {
+   --spacing-xs: 0.3em;
    --spacing-sm: 0.5em;
    --spacing-md: 1em;
    --spacing-lg: 2em;

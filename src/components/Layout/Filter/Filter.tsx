@@ -8,6 +8,11 @@ const Filter: React.FC = () => {
       setIsVisible((isVisible) => !isVisible);
    };
 
+   // TODO:
+   // 1. Convert filter items to array of objects and map them instead of hadrcoding them here
+   // 2. Try displaying only the first 3 filter items (as a subarray);
+   // 3. On Show more click, display the rest of the elements
+
    return (
       <div className="Filter test-border">
          <h3 className="title border-bottom">Категория</h3>

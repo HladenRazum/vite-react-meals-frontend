@@ -16,5 +16,8 @@
       margin-left: var(--spacing-sm);
       display: inline;
       font-size: var(--label-sm);
+      font-weight: 400;
+      margin-bottom: var(--spacing-xs);
+      cursor: pointer;
    }
 }
