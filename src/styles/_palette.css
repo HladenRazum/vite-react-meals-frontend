@@ -7,7 +7,9 @@
    --darkBlue: #000065;
    --darkerBlue: #000040;
    --lightBlue: #aeafff;
+   --lightPurple: #e5eeff;
    --transparent-grey: rgba(153, 151, 151, 0.673);
+   --darkYellow: #ffeb3b;
 }
 
 :root {
@@ -20,4 +22,6 @@
    --primary-darken: var(--darkerBlue);
    --btn-textColor: var(--lightBlue);
    --border-color: var(--transparent-grey);
+   --input-BgColor: var(--lightPurple);
+   --heading-textColor: var(--darkYellow);
 }
