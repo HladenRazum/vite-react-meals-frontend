@@ -26,3 +26,9 @@ label {
 .fullWidth {
    width: 100%;
 }
+
+.test {
+   background-color: rgb(250, 221, 240);
+   color: rgb(255, 0, 13);
+   padding: 0 0.5em;
+}

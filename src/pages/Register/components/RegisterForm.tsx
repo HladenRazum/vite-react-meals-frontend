@@ -1,8 +1,11 @@
 import { SubmitHandler, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import validationSchema, { FormData } from "./validationSchema";
+import useRegister from "./useRegister";
 
 const RegisterForm: React.FC = () => {
+   const { sendRequest, isLoading, error } = useRegister();
+
    const {
       register,
       handleSubmit,
@@ -14,11 +17,15 @@ const RegisterForm: React.FC = () => {
    });
 
    const onSubmit: SubmitHandler<FormData> = ({ username, password }) => {
+      sendRequest();
       reset();
    };
 
    return (
       <form onSubmit={handleSubmit(onSubmit)}>
+         {isLoading ? <p className="test">Loading...</p> : null}
+         {error ? <p className="test">{error}</p> : null}
+
          <div className="formGroup">
             <label htmlFor="username">Username</label>
             <input
