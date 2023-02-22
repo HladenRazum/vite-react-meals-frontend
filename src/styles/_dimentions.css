@@ -6,3 +6,9 @@
    --tablet: 780px;
    --desktop: 1024px;
 }
+
+:root {
+   --flex-gap: var(--spacing-lg);
+   --one-third: 33.33%;
+   --two-thirds: 66.66%;
+}

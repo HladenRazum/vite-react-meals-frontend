@@ -9,6 +9,6 @@
    margin-right: var(--spacing-md);
 }
 
-.NavigationWrapper nav a {
-   color: rgb(147, 147, 255);
+.NavigationWrapper nav li:last-child {
+   margin-right: 0;
 }

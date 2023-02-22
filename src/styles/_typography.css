@@ -1,3 +1,8 @@
+:root {
+   --label-sm: 0.8rem;
+   --label-md: 1rem;
+}
+
 h1 {
    font-size: 2.6rem;
    color: var(--heading-textColor);

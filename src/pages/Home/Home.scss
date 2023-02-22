@@ -1,0 +1,8 @@
+.Home {
+   display: flex;
+   gap: var(--flex-gap);
+
+   .filters {
+      max-width: var(--one-third);
+   }
+}

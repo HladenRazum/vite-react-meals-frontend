@@ -21,7 +21,7 @@ const RegisterForm: React.FC = () => {
    };
 
    return (
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form className="form" onSubmit={handleSubmit(onSubmit)}>
          {isLoading ? <p className="test">Loading...</p> : null}
          {error ? <p className="test">{error}</p> : null}
 

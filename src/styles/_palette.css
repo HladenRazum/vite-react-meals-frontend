@@ -10,11 +10,13 @@
    --lightPurple: #e5eeff;
    --transparent-grey: rgba(153, 151, 151, 0.673);
    --darkYellow: #ffeb3b;
+   --myRed: #e41b1b;
+   --lightGrey: #ebebeb;
 }
 
 :root {
-   --primary-bgColor: var(--darkGrey);
-   --primary-textColor: var(--white);
+   --primary-bgColor: var(--lightGrey);
+   --primary-textColor: var(--black);
    --secondary-textColor: var(--black);
    --error-textColor: var(--lightRed);
    --error-bgColor: var(--darkRed);
@@ -23,5 +25,5 @@
    --btn-textColor: var(--lightBlue);
    --border-color: var(--transparent-grey);
    --input-BgColor: var(--lightPurple);
-   --heading-textColor: var(--darkYellow);
+   --heading-textColor: var(--myRed);
 }
