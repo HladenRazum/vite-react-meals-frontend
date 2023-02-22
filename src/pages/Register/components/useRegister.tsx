@@ -10,16 +10,13 @@ const useRegister = () => {
       setError(null);
 
       try {
-         const response = await fetch("https://swap.dev/api/people/1", {
-            method: "POST",
+         const response = await fetch("https://swapi.dev/api/people/1", {
+            method: "GET",
             headers: {
                "Content-Type": "application/json",
             },
             // body: JSON.stringify(credentials),
          });
-
-         console.log(response);
-         return;
 
          if (!response.ok) {
             throw new Error("Failed sending the request");

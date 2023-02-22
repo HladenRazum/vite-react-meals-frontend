@@ -4,8 +4,7 @@ import validationSchema, { FormData } from "./validationSchema";
 import useRegister from "./useRegister";
 
 const RegisterForm: React.FC = () => {
-   const { sendRequest, isLoading, error } = useRegister();
-
+   const { sendRequest, isLoading, error, responseData } = useRegister();
    const {
       register,
       handleSubmit,
@@ -46,7 +45,7 @@ const RegisterForm: React.FC = () => {
             />
             <p className="error">{errors.password?.message}</p>
          </div>
-         <button className="fullWidth" type="submit">
+         <button className="fullWidth" type="submit" disabled={isLoading}>
             SignUp
          </button>
       </form>
