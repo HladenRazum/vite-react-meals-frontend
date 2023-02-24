@@ -1,6 +1,5 @@
 :root {
-   --black: #000000;
-   --darkGrey: #202020;
+   --black: #060606;
    --white: #fafafa;
    --lightRed: #f72121;
    --darkRed: #270101;
@@ -12,6 +11,7 @@
    --darkYellow: #ffeb3b;
    --myRed: #e41b1b;
    --lightGrey: #d6d6d6;
+   --darkGrey: #171717;
 }
 
 :root {
