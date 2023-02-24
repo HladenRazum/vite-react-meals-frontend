@@ -1,6 +1,6 @@
 :root {
    --black: #060606;
-   --white: #fafafa;
+   --white: #ffffff;
    --lightRed: #f72121;
    --darkRed: #270101;
    --darkBlue: #000065;
@@ -12,11 +12,14 @@
    --myRed: #e41b1b;
    --lightGrey: #d6d6d6;
    --darkGrey: #171717;
+   --orange: #f4d6a0;
+   --purple: #c18ac1;
+   --testing-bgColor: #68686a;
 }
 
 :root {
-   --primary-bgColor: var(--lightGrey);
-   --primary-textColor: var(--black);
+   --primary-bgColor: var(--testing-bgColor);
+   --primary-textColor: var(--darkerBlue);
    --secondary-textColor: var(--black);
    --error-textColor: var(--lightRed);
    --error-bgColor: var(--darkRed);
@@ -25,5 +28,5 @@
    --btn-textColor: var(--lightBlue);
    --border-color: var(--transparent-grey);
    --input-BgColor: var(--lightPurple);
-   --heading-textColor: var(--myRed);
+   --heading-textColor: var(--lightRed);
 }
