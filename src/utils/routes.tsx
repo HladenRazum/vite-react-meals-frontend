@@ -28,10 +28,22 @@ export const ROUTES: Routes = {
       path: "*",
       element: <NotFound />,
    },
+   recipes: {
+      name: "recipes",
+      path: "/recipes",
+      element: <p>Some recipes</p>,
+   },
+   recipe: {
+      name: "recipe",
+      path: "/recipes/:recipeId",
+      element: <p>Single recipe</p>,
+   },
 };
 
 export enum RouteName {
    Home = "home",
    Register = "register",
    NotFound = "notFound",
+   Recipes = "recipes",
+   Recipe = "recipe",
 }
