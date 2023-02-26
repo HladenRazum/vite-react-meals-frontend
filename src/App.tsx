@@ -2,8 +2,11 @@ import { Route, Routes } from "react-router-dom";
 import NavigationWrapper from "./components/Layout/NavigationWrapper/NavigationWrapper";
 import LayoutWrapper from "./components/Layout/LayoutWrapper/LayoutWrapper";
 import getRoutes from "./utils/getRoutes";
+import useTheme from "./hooks/useTheme";
 
 function App() {
+   useTheme();
+
    return (
       <div>
          <LayoutWrapper>

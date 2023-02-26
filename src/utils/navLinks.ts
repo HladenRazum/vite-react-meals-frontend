@@ -1,4 +1,4 @@
-import { NavLink } from "../types/NavLink";
+import { NavLink } from "../types/navLink.type";
 import { ROUTES } from "./routes";
 
 const NAV_LINKS: NavLink[] = [

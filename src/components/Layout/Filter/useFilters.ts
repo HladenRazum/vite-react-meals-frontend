@@ -15,7 +15,6 @@ const useFilters = () => {
          const data = await response.json();
          setFilters(data);
       } catch (error) {
-         console.log(error);
          setFilters([]);
       }
    };

@@ -23,6 +23,7 @@ const Filter: React.FC = () => {
       <div className="Filter">
          <h3 className="title border-bottom">Категория</h3>
          <form>
+            {filters.length === 0 && <p>No results</p>}
             {filters.length > 0 &&
                filters.map((filter) => (
                   <CheckBox

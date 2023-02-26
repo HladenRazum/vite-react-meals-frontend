@@ -1,0 +1,18 @@
+.ThemeSwitch {
+   .row {
+      display: flex;
+      gap: 1em;
+      align-items: center;
+      margin-bottom: 0.5em;
+   }
+
+   label {
+      margin-bottom: 0;
+      display: block;
+   }
+
+   input {
+      display: block;
+      margin: 0;
+   }
+}
