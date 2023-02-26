@@ -10,6 +10,10 @@ const NAV_LINKS: NavLink[] = [
       name: ROUTES.register.name,
       to: ROUTES.register.path,
    },
+   {
+      name: ROUTES.testing.name,
+      to: ROUTES.testing.path,
+   },
 ];
 
 export default NAV_LINKS;

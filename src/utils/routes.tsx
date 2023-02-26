@@ -3,6 +3,7 @@ import { Route } from "react-router-dom";
 import Home from "../pages/Home/Home";
 import NotFound from "../pages/NotFound/NotFound";
 import Register from "../pages/Register/Register";
+import TestPage from "../pages/Testpage/TestPage";
 
 type Route = {
    name: string;
@@ -38,6 +39,11 @@ export const ROUTES: Routes = {
       path: "/recipes/:recipeId",
       element: <p>Single recipe</p>,
    },
+   testing: {
+      name: "testing",
+      path: "/test",
+      element: <TestPage />,
+   },
 };
 
 export enum RouteName {
@@ -46,4 +52,5 @@ export enum RouteName {
    NotFound = "notFound",
    Recipes = "recipes",
    Recipe = "recipe",
+   TESTING = "testing",
 }
