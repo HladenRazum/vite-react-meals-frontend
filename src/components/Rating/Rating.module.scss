@@ -1,7 +1,17 @@
 .Rating {
-   meter {
-      height: 100px;
-      width: 100%;
-      border-radius: 0;
+   button {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 0;
+   }
+
+   .on {
+      color: var(--accent-color);
+   }
+
+   .off {
+      color: var(--inactive-color);
    }
 }

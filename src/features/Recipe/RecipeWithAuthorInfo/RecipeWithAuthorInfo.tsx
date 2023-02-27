@@ -1,9 +1,10 @@
-import Recipe from "../components/Recipe/Recipe";
+import Recipe from "../Recipe";
+import { RatingType } from "../../../types/rating.type";
 
 type RecipeWithAuthorInfoProps = {
    title: string;
    imageURL: string;
-   rating: number;
+   rating: RatingType;
    authorName: string;
 };
 

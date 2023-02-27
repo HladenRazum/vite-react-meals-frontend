@@ -1,6 +1,8 @@
+import { RatingType } from "./rating.type";
+
 export interface RecipeI {
    name: string;
-   rating: number;
+   rating: RatingType;
    tumbnailImageURL: string;
    authorName: string;
 }

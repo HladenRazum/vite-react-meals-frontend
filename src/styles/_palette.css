@@ -31,6 +31,8 @@
    --heading-textColor: var(--lightRed);
    --link-textColor: #1400e4;
    --icon-fillColor: var(--black);
+   --accent-color: #ffc600;
+   --inactive-color: #d5d5d5;
 }
 
 :root .dark {
@@ -47,6 +49,8 @@
    --heading-textColor: #d46eef;
    --link-textColor: rgb(255 252 9);
    --icon-fillColor: var(--lightGrey);
+   --accent-color: #45b800;
+   --inactive-color: #515454;
 }
 
 :root .high-contrast {
@@ -63,4 +67,6 @@
    --heading-textColor: var(--black);
    --link-textColor: #ff00fc;
    --icon-fillColor: blue;
+   --accent-color: #ff0000;
+   --inactive-color: #9d9d88;
 }
