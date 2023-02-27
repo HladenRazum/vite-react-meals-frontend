@@ -26,6 +26,7 @@ const Navigation: React.FC<NavigationProps> = ({ links }) => {
                   ))}
                </ul>
             </nav>
+            <ThemeSwitch />
          </div>
       </div>
    );

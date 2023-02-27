@@ -22,6 +22,14 @@ label {
    font-weight: 700;
 }
 
+svg {
+   fill: var(--icon-fillColor);
+}
+
+.mb {
+   margin-bottom: var(--spacing-md);
+}
+
 .flex {
    display: flex;
 }

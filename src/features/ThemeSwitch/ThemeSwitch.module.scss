@@ -4,6 +4,10 @@
       gap: 0.3em;
       align-items: center;
       margin-bottom: 0.5em;
+
+      &:last-of-type {
+         margin-bottom: 0;
+      }
    }
 
    label {
@@ -16,5 +20,19 @@
    input {
       display: block;
       margin: 0;
+   }
+
+   form {
+      position: absolute;
+      padding: 0.5em;
+      background-color: var(--secondary-bgColor);
+   }
+
+   .switch-theme-button {
+      all: unset;
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+      margin-bottom: 1em;
    }
 }

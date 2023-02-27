@@ -17,11 +17,26 @@
    --testing-bgColor: #28282d;
    --twBlue: #3029db;
 }
+:root .light {
+   --primary-bgColor: rgb(243 254 253);
+   --primary-textColor: rgb(0, 0, 0);
+   --secondary-bgColor: var(--white);
+   --error-textColor: var(--lightRed);
+   --error-bgColor: var(--darkRed);
+   --primary: var(--darkBlue);
+   --primary-darken: var(--darkerBlue);
+   --btn-textColor: var(--lightBlue);
+   --border-color: var(--transparent-grey);
+   --input-BgColor: var(--lightPurple);
+   --heading-textColor: var(--lightRed);
+   --link-textColor: #1400e4;
+   --icon-fillColor: var(--black);
+}
 
 :root .dark {
    --primary-bgColor: var(--testing-bgColor);
    --primary-textColor: var(--white);
-   --secondary-textColor: var(--white);
+   --secondary-bgColor: var(--black);
    --error-textColor: var(--lightRed);
    --error-bgColor: var(--darkRed);
    --primary: var(--darkBlue);
@@ -29,14 +44,15 @@
    --btn-textColor: var(--lightBlue);
    --border-color: var(--transparent-grey);
    --input-BgColor: var(--lightPurple);
-   --heading-textColor: var(--lightRed);
+   --heading-textColor: #d46eef;
    --link-textColor: rgb(255 252 9);
+   --icon-fillColor: var(--lightGrey);
 }
 
 :root .high-contrast {
-   --primary-bgColor: yellow;
+   --primary-bgColor: #d4d47e;
    --primary-textColor: blue;
-   --secondary-textColor: var(--white);
+   --secondary-bgColor: var(--purple);
    --error-textColor: var(--lightRed);
    --error-bgColor: var(--darkRed);
    --primary: var(--darkBlue);
@@ -44,21 +60,7 @@
    --btn-textColor: var(--lightBlue);
    --border-color: var(--transparent-grey);
    --input-BgColor: var(--lightPurple);
-   --heading-textColor: var(--lightRed);
-   --link-textColor: red;
-}
-
-:root .light {
-   --primary-bgColor: rgb(239 239 239);
-   --primary-textColor: rgb(0, 0, 0);
-   --secondary-textColor: yellow;
-   --error-textColor: var(--lightRed);
-   --error-bgColor: var(--darkRed);
-   --primary: var(--darkBlue);
-   --primary-darken: var(--darkerBlue);
-   --btn-textColor: var(--lightBlue);
-   --border-color: var(--transparent-grey);
-   --input-BgColor: var(--lightPurple);
-   --heading-textColor: var(--lightRed);
-   --link-textColor: red;
+   --heading-textColor: var(--black);
+   --link-textColor: #ff00fc;
+   --icon-fillColor: blue;
 }

@@ -3,7 +3,7 @@ import RegisterForm from "./components/RegisterForm";
 
 const Register: React.FC = () => {
    return (
-      <PageWrapper title="Register" className="dark">
+      <PageWrapper title="Register">
          <RegisterForm />
       </PageWrapper>
    );

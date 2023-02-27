@@ -13,7 +13,6 @@ const Home: React.FC = () => {
             </div>
             <RecipesList />
          </div>
-         <ThemeSwitch />
       </PageWrapper>
    );
 };
