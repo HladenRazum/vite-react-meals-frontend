@@ -1,25 +1,18 @@
-import { FormEvent } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import userSlice, { changeTheme, getTheme } from "../../store/user/userSlice";
+import { ChangeEvent } from "react";
+import { useDispatch } from "react-redux";
+import { changeTheme } from "../../store/user/userSlice";
+import { Theme } from "../../types/theme.type";
 import classes from "./ThemeSwitch.module.scss";
 
 const ThemeSwitch: React.FC = () => {
    const dispatch = useDispatch();
 
-   const toggleTheme = () => {
-      dispatch(changeTheme("high-contrast"));
-   };
-
-   const handleSubmit = (e: FormEvent) => {
-      console.log(e.target);
-   };
-
-   const handleChange = (e: FormEvent) => {
-      handleSubmit(e);
+   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+      dispatch(changeTheme(e.target.id as Theme));
    };
 
    return (
-      <form className={classes.ThemeSwitch} onSubmit={handleSubmit}>
+      <form className={classes.ThemeSwitch}>
          <div className={classes.row}>
             <input
                id="light"
