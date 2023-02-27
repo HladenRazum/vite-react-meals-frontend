@@ -34,7 +34,7 @@
 }
 
 :root .dark {
-   --primary-bgColor: var(--testing-bgColor);
+   --primary-bgColor: #171722;
    --primary-textColor: var(--white);
    --secondary-bgColor: var(--black);
    --error-textColor: var(--lightRed);
