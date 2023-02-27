@@ -14,40 +14,12 @@
    --darkGrey: #171717;
    --orange: #f4d6a0;
    --purple: #c18ac1;
-   --testing-bgColor: #68686a;
+   --testing-bgColor: #28282d;
    --twBlue: #3029db;
 }
 
-/* :root {
-   --primary-bgColor: var(--lightBlue);
-   --primary-textColor: var(--black);
-   --secondary-textColor: var(--white);
-   --error-textColor: var(--lightRed);
-   --error-bgColor: var(--darkRed);
-   --primary: var(--darkBlue);
-   --primary-darken: var(--darkerBlue);
-   --btn-textColor: var(--lightBlue);
-   --border-color: var(--transparent-grey);
-   --input-BgColor: var(--lightPurple);
-   --heading-textColor: var(--lightRed);
-} */
-
-[data-theme="dark"] {
-   --primary-bgColor: var(--twBlue);
-   --primary-textColor: var(--white);
-   --secondary-textColor: var(--white);
-   --error-textColor: var(--lightRed);
-   --error-bgColor: var(--darkRed);
-   --primary: var(--darkBlue);
-   --primary-darken: var(--darkerBlue);
-   --btn-textColor: var(--lightBlue);
-   --border-color: var(--transparent-grey);
-   --input-BgColor: var(--lightPurple);
-   --heading-textColor: var(--lightRed);
-}
-
 :root .dark {
-   --primary-bgColor: var(--twBlue);
+   --primary-bgColor: var(--testing-bgColor);
    --primary-textColor: var(--white);
    --secondary-textColor: var(--white);
    --error-textColor: var(--lightRed);
@@ -58,6 +30,7 @@
    --border-color: var(--transparent-grey);
    --input-BgColor: var(--lightPurple);
    --heading-textColor: var(--lightRed);
+   --link-textColor: rgb(255 252 9);
 }
 
 :root .high-contrast {
@@ -72,6 +45,7 @@
    --border-color: var(--transparent-grey);
    --input-BgColor: var(--lightPurple);
    --heading-textColor: var(--lightRed);
+   --link-textColor: red;
 }
 
 :root .light {
@@ -86,4 +60,5 @@
    --border-color: var(--transparent-grey);
    --input-BgColor: var(--lightPurple);
    --heading-textColor: var(--lightRed);
+   --link-textColor: red;
 }
