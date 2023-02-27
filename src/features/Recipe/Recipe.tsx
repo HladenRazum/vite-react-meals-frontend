@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { RatingType } from "../../types/rating.type";
 import { ROUTES } from "../../utils/routes";
 import Rating from "../../components/Rating/Rating";
+import classes from "./Recipe.module.scss";
 
 type RecipeProps = {
    title: string;
@@ -11,7 +12,7 @@ type RecipeProps = {
 
 const Recipe: React.FC<RecipeProps> = ({ title, imageURL, rating }) => {
    return (
-      <div>
+      <div className={classes.Recipe}>
          <header>
             <h4>{title}</h4>
             <Link to={ROUTES.recipes.path + "/" + title}>
