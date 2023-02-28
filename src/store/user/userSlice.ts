@@ -11,6 +11,8 @@ interface UserState {
    theme: Theme;
 }
 
+const theme = localStorage.getItem("theme") as Theme;
+
 const initialState: UserState = {
    user: {
       id: "",
@@ -18,7 +20,7 @@ const initialState: UserState = {
       isAdmin: false,
    },
    isLoggedIn: false,
-   theme: "light",
+   theme: theme || "light",
 };
 
 export const userSlice = createSlice({
@@ -38,6 +40,7 @@ export const userSlice = createSlice({
       changeTheme: (state, action: PayloadAction<Theme>) => {
          state.theme = action.payload;
          document.body.setAttribute("class", state.theme);
+         localStorage.setItem("theme", action.payload);
       },
    },
 });
