@@ -17,7 +17,7 @@ const RecipesList: React.FC = () => {
    }
 
    return (
-      <ul>
+      <ul className="nomargin">
          {RECIPES.map((recipe) => (
             <Recipe
                key={recipe.name}

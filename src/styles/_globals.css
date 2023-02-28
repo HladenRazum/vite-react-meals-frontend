@@ -30,6 +30,10 @@ svg {
    margin-bottom: var(--spacing-md);
 }
 
+.nomargin {
+   margin: 0;
+}
+
 .flex {
    display: flex;
 }
