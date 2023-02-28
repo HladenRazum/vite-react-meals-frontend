@@ -1,4 +1,4 @@
-import RecipeWithAuthorInfo from "../../../../features/Recipe/RecipeWithAuthorInfo/RecipeWithAuthorInfo";
+import Recipe from "../../../../features/Recipe/Recipe";
 import { RecipeI } from "../../../../types/recipe.interface";
 
 const RECIPES: RecipeI[] = [
@@ -19,12 +19,11 @@ const RecipesList: React.FC = () => {
    return (
       <ul>
          {RECIPES.map((recipe) => (
-            <RecipeWithAuthorInfo
+            <Recipe
                key={recipe.name}
                title={recipe.name}
                rating={recipe.rating}
                imageURL={recipe.tumbnailImageURL}
-               authorName={recipe.authorName}
             />
          ))}
       </ul>

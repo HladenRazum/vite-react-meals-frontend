@@ -6,6 +6,7 @@
    --mobile: 360px;
    --tablet: 780px;
    --desktop: 1024px;
+   --border-radius: 4px;
 }
 
 :root {

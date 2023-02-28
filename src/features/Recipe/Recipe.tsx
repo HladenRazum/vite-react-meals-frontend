@@ -3,6 +3,7 @@ import { RatingType } from "../../types/rating.type";
 import { ROUTES } from "../../utils/routes";
 import Rating from "../../components/Rating/Rating";
 import classes from "./Recipe.module.scss";
+import Paper from "../../components/Layout/atoms/Paper/Paper";
 
 type RecipeProps = {
    title: string;
@@ -12,17 +13,20 @@ type RecipeProps = {
 
 const Recipe: React.FC<RecipeProps> = ({ title, imageURL, rating }) => {
    return (
-      <div className={classes.Recipe}>
-         <header>
-            <h4>{title}</h4>
-            <Link to={ROUTES.recipes.path + "/" + title}>
-               <figure>
-                  <img src={imageURL} alt={title} />
-               </figure>
-            </Link>
-            <Rating rating={rating} fontSize={24} />
-         </header>
-      </div>
+      <Paper>
+         <div className={classes.Recipe}>
+            <header>
+               <Link to={ROUTES.recipes.path + "/" + title}>
+                  <figure>
+                     <img src={imageURL} alt={title} />
+                  </figure>
+                  <h4>{title}</h4>
+               </Link>
+
+               <Rating rating={rating} fontSize={24} />
+            </header>
+         </div>
+      </Paper>
    );
 };
 

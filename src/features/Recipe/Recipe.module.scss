@@ -1,5 +1,10 @@
 .Recipe {
+   h4 {
+      margin: 0;
+   }
+
    figure {
       margin: 0;
+      margin-bottom: var(--spacing-sm);
    }
 }

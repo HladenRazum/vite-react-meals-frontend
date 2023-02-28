@@ -1,3 +1,7 @@
 a {
    color: var(--link-textColor);
 }
+
+nav a {
+   color: var(--navLink-color);
+}
