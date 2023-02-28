@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import ThemeSwitch from "../../../features/ThemeSwitch/ThemeSwitch";
 import { NavLink } from "../../../types/navLink.type";
-import Logo from "../atoms/Logo/Logo";
+import Logo from "../../atoms/Logo/Logo";
 import "./Navigation.css";
 
 type NavigationProps = {

@@ -1,8 +1,8 @@
 import { ChangeEvent, useState } from "react";
 import useFilters from "./useFilters";
-import "./Filter.scss";
 import CheckBox from "../../CheckBox/CheckBox";
-import Paper from "../atoms/Paper/Paper";
+import Paper from "../../atoms/Paper/Paper";
+import "./Filter.scss";
 
 const Filter: React.FC = () => {
    const [selectedFilters, setSelectedFilters] = useState<string[]>([]);

@@ -1,8 +1,7 @@
-import { ChangeEvent, useEffect, useState } from "react";
+import { ChangeEvent, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { changeTheme, getTheme } from "../../store/user/userSlice";
 import { Theme } from "../../types/theme.type";
-import gearIcon from "../../assets/user-gear-solid.svg";
 import classes from "./ThemeSwitch.module.scss";
 
 const ThemeSwitch: React.FC = () => {

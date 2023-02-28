@@ -3,7 +3,7 @@ import { RatingType } from "../../types/rating.type";
 import { ROUTES } from "../../utils/routes";
 import Rating from "../../components/Rating/Rating";
 import classes from "./Recipe.module.scss";
-import Paper from "../../components/Layout/atoms/Paper/Paper";
+import Paper from "../../components/atoms/Paper/Paper";
 
 type RecipeProps = {
    title: string;
