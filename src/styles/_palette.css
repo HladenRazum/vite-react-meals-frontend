@@ -1,7 +1,7 @@
 :root {
    --black: #060606;
    --white: #ffffff;
-   --lightRed: #f72121;
+   --lightRed: #ff5050;
    --darkRed: #270101;
    --darkBlue: #000065;
    --darkerBlue: #000040;
@@ -9,7 +9,7 @@
    --lightPurple: #e5eeff;
    --transparent-grey: rgba(153, 151, 151, 0.3);
    --darkYellow: #ffeb3b;
-   --myRed: #e41b1b;
+   --myRed: #ff0000;
    --lightGrey: #f1f1f1;
    --darkGrey: #171717;
    --orange: #f4d6a0;
@@ -28,7 +28,7 @@
    --btn-textColor: var(--lightBlue);
    --border-color: var(--transparent-grey);
    --input-BgColor: var(--lightPurple);
-   --heading-textColor: var(--lightRed);
+   --heading-textColor: var(--myRed);
    --link-textColor: #1400e4;
    --icon-fillColor: var(--black);
    --accent-color: #ffc600;
@@ -47,7 +47,7 @@
    --btn-textColor: var(--lightBlue);
    --border-color: var(--transparent-grey);
    --input-BgColor: var(--lightPurple);
-   --heading-textColor: #d46eef;
+   --heading-textColor: var(--myRed);
    --link-textColor: rgb(255 252 9);
    --icon-fillColor: var(--lightGrey);
    --accent-color: #45b800;
@@ -66,7 +66,7 @@
    --btn-textColor: var(--lightBlue);
    --border-color: var(--transparent-grey);
    --input-BgColor: var(--lightPurple);
-   --heading-textColor: var(--black);
+   --heading-textColor: var(--myRed);
    --link-textColor: #d700ff;
    --icon-fillColor: blue;
    --accent-color: #ff0000;

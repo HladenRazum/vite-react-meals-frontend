@@ -2,7 +2,7 @@ import { Route } from "react-router-dom";
 import { ROUTES } from "./routes";
 
 const getRoutes = (): JSX.Element[] => {
-   const paths: JSX.Element[] = [];
+   const routes: JSX.Element[] = [];
 
    for (const route in ROUTES) {
       if (route in ROUTES) {
@@ -14,13 +14,13 @@ const getRoutes = (): JSX.Element[] => {
             element,
          };
 
-         paths.push(
+         routes.push(
             <Route key={props.path} path={props.path} element={props.element} />
          );
       }
    }
 
-   return paths;
+   return routes;
 };
 
 export default getRoutes;
