@@ -11,6 +11,10 @@ const NAV_LINKS: NavLink[] = [
       to: ROUTES.register.path,
    },
    {
+      name: ROUTES.newRecipe.name,
+      to: ROUTES.newRecipe.path,
+   },
+   {
       name: ROUTES.testing.name,
       to: ROUTES.testing.path,
    },

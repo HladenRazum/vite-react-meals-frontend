@@ -1,6 +1,7 @@
 import { ReactElement } from "react";
 import { Route } from "react-router-dom";
 import Home from "../pages/Home/Home";
+import NewRecipe from "../pages/NewRecipe/NewRecipe";
 import NotFound from "../pages/NotFound/NotFound";
 import Register from "../pages/Register/Register";
 import TestPage from "../pages/Testpage/TestPage";
@@ -39,6 +40,11 @@ export const ROUTES: Routes = {
       path: "/recipes/:recipeId",
       element: <p>Single recipe</p>,
    },
+   newRecipe: {
+      name: "new recipe",
+      path: "/new-recipe",
+      element: <NewRecipe />,
+   },
    testing: {
       name: "testing",
       path: "/test",
@@ -52,5 +58,6 @@ export enum RouteName {
    NotFound = "notFound",
    Recipes = "recipes",
    Recipe = "recipe",
+   NewRecipe = "newRecipe",
    TESTING = "testing",
 }

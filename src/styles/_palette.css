@@ -9,7 +9,7 @@
    --lightPurple: #e5eeff;
    --transparent-grey: rgba(153, 151, 151, 0.3);
    --darkYellow: #ffeb3b;
-   --myRed: #ff0000;
+   --myRed: #ff2929;
    --lightGrey: #f1f1f1;
    --darkGrey: #171717;
    --orange: #f4d6a0;
@@ -49,7 +49,7 @@
    --input-BgColor: var(--lightPurple);
    --heading-textColor: var(--myRed);
    --link-textColor: rgb(255 252 9);
-   --icon-fillColor: var(--lightGrey);
+   --icon-fillColor: rgb(24, 225, 247);
    --accent-color: #45b800;
    --inactive-color: #515454;
    --navLink-color: rgb(255, 105, 105);
@@ -58,7 +58,7 @@
 :root .high-contrast {
    --primary-bgColor: #d4d47e;
    --primary-textColor: blue;
-   --secondary-bgColor: #c9c94a;
+   --secondary-bgColor: #e761ff;
    --error-textColor: var(--lightRed);
    --error-bgColor: var(--darkRed);
    --primary: var(--darkBlue);
