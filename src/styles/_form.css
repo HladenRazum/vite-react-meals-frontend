@@ -4,8 +4,16 @@
    border: 1px solid var(--border-color);
    display: flex;
    flex-direction: column;
-   align-items: center;
    padding: 50px 30px;
    border-radius: 4px;
    margin: auto;
+}
+
+.form > h2,
+.form > h3 {
+   margin-top: 0;
+}
+
+.form.wide {
+   max-width: 520px;
 }

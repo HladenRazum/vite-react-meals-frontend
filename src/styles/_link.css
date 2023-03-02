@@ -5,3 +5,7 @@ a {
 nav a {
    color: var(--navLink-color);
 }
+
+nav a:hover {
+   color: var(--navLink-hover-color);
+}

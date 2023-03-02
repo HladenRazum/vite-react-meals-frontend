@@ -34,6 +34,7 @@
    --accent-color: #ffc600;
    --inactive-color: #d5d5d5;
    --navLink-color: #018900;
+   --navLink-hover-color: #27fb27;
 }
 
 :root .dark {
@@ -53,6 +54,7 @@
    --accent-color: #45b800;
    --inactive-color: #515454;
    --navLink-color: rgb(255, 105, 105);
+   --navLink-hover-color: #ff2759;
 }
 
 :root .high-contrast {
@@ -72,4 +74,5 @@
    --accent-color: #ff0000;
    --inactive-color: rgb(106, 85, 106);
    --navLink-color: red;
+   --navLink-hover-color: #ff9595;
 }
