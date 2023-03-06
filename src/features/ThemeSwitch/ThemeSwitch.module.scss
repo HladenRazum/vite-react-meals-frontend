@@ -37,8 +37,16 @@
    }
 }
 
-@media screen and (max-width: 600px) {
-   form {
-      right: 0;
+@media screen and (max-width: 1000px) {
+   .ThemeSwitch {
+      form {
+         right: 2%;
+      }
+   }
+}
+
+@media screen and (max-width: 550px) {
+   .ThemeSwitch {
+      display: none;
    }
 }

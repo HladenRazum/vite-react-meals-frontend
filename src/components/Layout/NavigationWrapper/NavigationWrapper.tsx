@@ -1,6 +1,5 @@
 import NAV_LINKS from "../../../utils/navLinks";
 import Navigation from "../Navigation/Navigation";
-import "./NavigationWrapper.css";
 
 type NavigationWrapperProps = {
    children?: React.ReactNode;
@@ -8,7 +7,7 @@ type NavigationWrapperProps = {
 
 const NavigationWrapper: React.FC<NavigationWrapperProps> = ({ children }) => {
    return (
-      <div className="NavigationWrapper">
+      <div>
          <Navigation links={NAV_LINKS} />
          {children}
       </div>

@@ -10,10 +10,17 @@
 @import url("./_typography.css");
 @import url("./_link.css");
 @import url("./_icons.css");
+@import url("./_wrappers.css");
 
 body {
    font-family: "Merriweather", serif;
    margin: 0;
    background-color: var(--primary-bgColor);
    color: var(--primary-textColor);
+}
+
+@media screen and (max-width: 550px) {
+   body {
+      background-color: var(--paper-bgColor);
+   }
 }

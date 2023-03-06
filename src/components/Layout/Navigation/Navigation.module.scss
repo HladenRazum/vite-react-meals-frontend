@@ -5,3 +5,24 @@
    padding: 2em 0;
    align-items: center;
 }
+
+.Navigation nav ul {
+   list-style: none;
+   display: flex;
+   padding: 0;
+   margin: 0;
+}
+
+.Navigation nav li {
+   margin-right: var(--spacing-md);
+}
+
+.Navigation nav li:last-child {
+   margin-right: 0;
+}
+
+@media screen and (max-width: 550px) {
+   .Navigation nav {
+      display: none;
+   }
+}

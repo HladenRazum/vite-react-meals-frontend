@@ -1,0 +1,11 @@
+.Logo img {
+   width: 40px;
+   height: auto;
+   display: inline-block;
+}
+
+@media screen and (max-width: 550px) {
+   .Logo {
+      display: none;
+   }
+}

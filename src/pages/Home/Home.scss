@@ -6,3 +6,18 @@
       max-width: var(--one-third);
    }
 }
+
+@media screen and (max-width: 550px) {
+   .Home {
+      flex-direction: column;
+
+      .filters {
+         max-width: 100%;
+      }
+
+      ul {
+         margin: 0;
+         padding: 0;
+      }
+   }
+}
