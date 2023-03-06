@@ -36,3 +36,9 @@
       margin-bottom: 1em;
    }
 }
+
+@media screen and (max-width: 600px) {
+   form {
+      right: 0;
+   }
+}

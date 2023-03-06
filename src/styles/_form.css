@@ -1,5 +1,5 @@
 .form {
-   background-color: var(--secondary-bgColor);
+   background-color: var(--paper-bgColor);
    max-width: 370px;
    border: 1px solid var(--border-color);
    display: flex;
@@ -16,4 +16,8 @@
 
 .form.wide {
    max-width: 520px;
+}
+
+label {
+   color: var(--label-textColor);
 }

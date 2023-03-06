@@ -18,16 +18,19 @@
    --twBlue: #3029db;
 }
 :root .light {
-   --primary-bgColor: #f7f8fa;
+   --primary-bgColor: #ffffff;
    --primary-textColor: rgb(0, 0, 0);
-   --secondary-bgColor: var(--white);
+   --secondary-bgColor: #f0f1f4;
+   --paper-bgColor: #e4e4ef;
    --error-textColor: var(--lightRed);
    --error-bgColor: var(--darkRed);
    --primary: var(--darkBlue);
    --primary-darken: var(--darkerBlue);
    --btn-textColor: var(--lightBlue);
    --border-color: var(--transparent-grey);
-   --input-BgColor: var(--lightPurple);
+   --input-bgColor: var(--secondary-bgColor);
+   --input-textColor: var(--black);
+   --input-placeholder-textColor: #7c7979;
    --heading-textColor: var(--myRed);
    --link-textColor: #1400e4;
    --icon-fillColor: var(--black);
@@ -35,19 +38,23 @@
    --inactive-color: #d5d5d5;
    --navLink-color: #018900;
    --navLink-hover-color: #27fb27;
+   --label-textColor: rgb(112 6 243);
 }
 
 :root .dark {
-   --primary-bgColor: #171722;
-   --primary-textColor: var(--white);
-   --secondary-bgColor: var(--black);
+   --primary-bgColor: #27272a;
+   --primary-textColor: #d7dac0;
+   --secondary-bgColor: #161414;
+   --paper-bgColor: var(--black);
    --error-textColor: var(--lightRed);
    --error-bgColor: var(--darkRed);
    --primary: var(--darkBlue);
    --primary-darken: var(--darkerBlue);
    --btn-textColor: var(--lightBlue);
    --border-color: var(--transparent-grey);
-   --input-BgColor: var(--lightPurple);
+   --input-bgColor: #242323;
+   --input-textColor: #c9e306;
+   --input-placeholder-textColor: #525153;
    --heading-textColor: var(--myRed);
    --link-textColor: rgb(255 252 9);
    --icon-fillColor: rgb(24, 225, 247);
@@ -55,24 +62,29 @@
    --inactive-color: #515454;
    --navLink-color: rgb(255, 105, 105);
    --navLink-hover-color: #ff2759;
+   --label-textColor: #6a7dff;
 }
 
 :root .high-contrast {
    --primary-bgColor: #d4d47e;
    --primary-textColor: blue;
    --secondary-bgColor: #e761ff;
+   --paper-bgColor: #e4e4ef;
    --error-textColor: var(--lightRed);
    --error-bgColor: var(--darkRed);
    --primary: var(--darkBlue);
    --primary-darken: var(--darkerBlue);
    --btn-textColor: var(--lightBlue);
-   --border-color: var(--transparent-grey);
-   --input-BgColor: var(--lightPurple);
+   --border-color: #3c043c;
+   --input-bgColor: var(--secondary-bgColor);
+   --input-textColor: #2a000a;
+   --input-placeholder-textColor: #e9c2f0;
    --heading-textColor: var(--myRed);
-   --link-textColor: #d700ff;
+   --link-textColor: #00ffdc;
    --icon-fillColor: blue;
    --accent-color: #ff0000;
    --inactive-color: rgb(106, 85, 106);
    --navLink-color: red;
    --navLink-hover-color: #ff9595;
+   --label-textColor: #001dff;
 }

@@ -5,6 +5,7 @@ import NewRecipe from "../pages/NewRecipe/NewRecipe";
 import NotFound from "../pages/NotFound/NotFound";
 import Register from "../pages/Register/Register";
 import TestPage from "../pages/Testpage/TestPage";
+import UserProfile from "../pages/UserProfile/UserProfile";
 
 type Route = {
    name: string;
@@ -50,14 +51,20 @@ export const ROUTES: Routes = {
       path: "/test",
       element: <TestPage />,
    },
+   userProfile: {
+      name: "user profile",
+      path: "/user-profile/:userId",
+      element: <UserProfile />,
+   },
 };
 
 export enum RouteName {
    Home = "home",
-   Register = "register",
-   NotFound = "notFound",
-   Recipes = "recipes",
-   Recipe = "recipe",
    NewRecipe = "newRecipe",
+   NotFound = "notFound",
+   Recipe = "recipe",
+   Recipes = "recipes",
+   Register = "register",
    TESTING = "testing",
+   UserProfile = "userProfile",
 }

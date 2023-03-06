@@ -15,7 +15,7 @@ const theme = localStorage.getItem("theme") as Theme;
 
 const initialState: UserState = {
    user: {
-      id: "",
+      id: "999",
       username: "",
       isAdmin: false,
    },
@@ -47,6 +47,7 @@ export const userSlice = createSlice({
 
 export const { login, changeTheme } = userSlice.actions;
 
-export const getTheme = (state: any) => state.user.theme;
+export const getTheme = (state: any): Theme => state.user.theme;
+export const getUserId = (state: any): string => state.user.userId;
 
 export default userSlice;

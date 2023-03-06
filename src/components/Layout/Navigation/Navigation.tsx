@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import ThemeSwitch from "../../../features/ThemeSwitch/ThemeSwitch";
 import { NavLink } from "../../../types/navLink.type";
 import Logo from "../../atoms/Logo/Logo";
-import "./Navigation.css";
+import classes from "./Navigation.module.scss";
 
 type NavigationProps = {
    links: NavLink[];
@@ -14,8 +14,8 @@ const Navigation: React.FC<NavigationProps> = ({ links }) => {
    }
 
    return (
-      <div className="Navigation">
-         <div className="inner wrappedWidth">
+      <div className={classes.Navigation}>
+         <div className={`${classes.inner} wrappedWidth`}>
             <Logo />
             <nav>
                <ul>
