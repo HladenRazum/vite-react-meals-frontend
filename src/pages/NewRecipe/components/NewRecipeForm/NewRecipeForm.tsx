@@ -26,6 +26,7 @@ const NewRecipeForm: React.FC = () => {
                type="text"
                id="recipe-name"
                placeholder="Recipe Name"
+               autoComplete="off"
                {...register("recipeName")}
             />
          </div>
@@ -36,6 +37,7 @@ const NewRecipeForm: React.FC = () => {
                placeholder="Ingredients"
                className="non-resizable-x"
                rows={5}
+               autoComplete="off"
                {...register("ingredients")}
             />
          </div>
@@ -46,6 +48,7 @@ const NewRecipeForm: React.FC = () => {
                placeholder="Cooking instructions"
                className="non-resizable-x"
                rows={5}
+               autoComplete="off"
                {...register("cookingInstrictions")}
             />
          </div>

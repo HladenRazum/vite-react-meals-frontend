@@ -30,6 +30,7 @@ const RegisterForm: React.FC = () => {
             <input
                type="text"
                placeholder="username"
+               autoComplete="off"
                {...register("username")}
                id="username"
             />
@@ -40,6 +41,7 @@ const RegisterForm: React.FC = () => {
             <input
                type="text"
                placeholder="password"
+               autoComplete="off"
                {...register("password")}
                id="password"
             />

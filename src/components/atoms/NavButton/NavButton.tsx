@@ -1,4 +1,5 @@
-import { useNavigate } from "react-router";
+import { useState } from "react";
+import { useNavigate, useLocation } from "react-router";
 import BackIcon from "../BackIcon/BackIcon";
 import classes from "./NavButton.module.scss";
 
@@ -8,8 +9,13 @@ type NavButtonProps = {
 
 const NavButton: React.FC<NavButtonProps> = ({ type = "back" }) => {
    const navigate = useNavigate();
+   const location = useLocation();
 
    const handleNavigate = () => {
+      if (location.pathname === "/") {
+         return;
+      }
+
       switch (type) {
          case "forward": {
             navigate(1);

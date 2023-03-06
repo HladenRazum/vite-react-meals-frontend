@@ -30,8 +30,8 @@
 
    .switch-theme-button {
       all: unset;
-      width: 32px;
-      height: 32px;
+      width: 30px;
+      height: 30px;
       cursor: pointer;
       margin-bottom: 1em;
    }
@@ -42,11 +42,5 @@
       form {
          right: 2%;
       }
-   }
-}
-
-@media screen and (max-width: 550px) {
-   .ThemeSwitch {
-      display: none;
    }
 }
