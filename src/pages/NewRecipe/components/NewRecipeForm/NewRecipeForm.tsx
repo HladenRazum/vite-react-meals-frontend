@@ -1,4 +1,3 @@
-import { FormEvent } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 
 type FormData = {

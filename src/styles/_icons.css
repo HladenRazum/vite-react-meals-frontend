@@ -1,0 +1,9 @@
+svg,
+rect {
+   fill: var(--icon-fillColor);
+}
+
+path,
+line {
+   stroke: var(--icon-fillColor);
+}

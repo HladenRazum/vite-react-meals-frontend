@@ -9,6 +9,7 @@
 @import url("./_button.css");
 @import url("./_typography.css");
 @import url("./_link.css");
+@import url("./_icons.css");
 
 body {
    font-family: "Merriweather", serif;
