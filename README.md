@@ -19,3 +19,17 @@
 9. Ingredient substitutions: The app should provide suggestions for ingredient substitutions for users with dietary restrictions or allergies.
 
 10.   User profile: Users should be able to create a profile, save their favorite recipes, and keep track of their cooking history and achievements.
+
+### References:
+
+-  https://javascript.plainenglish.io/16-libraries-you-should-know-as-a-react-developer-c9c595c8d25e
+
+### TODOs:
+
+-  add React chart -> visualize some statistics about recipes
+-  add Toast component (may be its message will need to be a part from Redux state)
+-  add Image slider -> visualize pictures of a recipe
+-  improve ThemePicker by using Popper
+-  try out React Joyride (May be a tutorial for the app)
+-  try React table - may be alternative way to display a recipe or some user's statistics
+-  try React drag and drop -> may be build a recipe using drag and drop components
