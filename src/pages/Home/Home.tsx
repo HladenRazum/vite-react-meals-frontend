@@ -1,6 +1,5 @@
 import Filter from "../../components/Layout/Filter/Filter";
 import PageWrapper from "../../components/Layout/PageWrapper/PageWrapper";
-import ThemeSwitch from "../../features/ThemeSwitch/ThemeSwitch";
 import RecipesList from "./components/RecipesList/RecipesList";
 import "./Home.scss";
 

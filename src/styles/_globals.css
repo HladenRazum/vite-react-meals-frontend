@@ -6,12 +6,6 @@
    width: 100%;
 }
 
-label {
-   display: block;
-   margin-bottom: var(--spacing-sm);
-   font-weight: 700;
-}
-
 .mb {
    margin-bottom: var(--spacing-md);
 }
@@ -36,15 +30,4 @@ label {
    border-bottom: 1px solid var(--transparent-grey);
    padding-bottom: 0.2em;
    margin-bottom: 0.2em;
-}
-
-/* Testing classes */
-.test {
-   background-color: rgb(250, 221, 240);
-   color: rgb(255, 0, 13);
-   padding: 0 0.5em;
-}
-
-.test-border {
-   border: 2px dashed #134b1c;
 }
