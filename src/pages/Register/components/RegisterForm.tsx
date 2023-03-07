@@ -1,11 +1,14 @@
+import { useMutation } from "react-query";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import useRegister from "./useRegister";
 import validationSchema, { FormData } from "./validationSchema";
 import ReactFormInput from "../../../components/ReactFormInput/ReactFormInput";
+import userAPI from "../../../api/user.api";
+import { useState } from "react";
 
 const RegisterForm: React.FC = () => {
-   const { sendRequest, isLoading, error } = useRegister();
+   const [toastMessage, setToastMessage] = useState("");
+
    const {
       register,
       handleSubmit,
@@ -16,15 +19,23 @@ const RegisterForm: React.FC = () => {
       mode: "onSubmit",
    });
 
+   const { mutate, isError, isLoading } = useMutation(userAPI.register, {
+      onSuccess: () => {
+         setToastMessage("Successfully registered");
+      },
+   });
+
    const onSubmit: SubmitHandler<FormData> = ({ username, password }) => {
-      sendRequest();
+      mutate({ username, password });
       reset();
    };
 
    return (
       <form className="form" onSubmit={handleSubmit(onSubmit)}>
-         {isLoading ? <p className="test">Loading...</p> : null}
-         {error ? <p className="test">{error}</p> : null}
+         {isLoading && <p>Loading...</p>}
+         {isError && (
+            <p className="error">There was an error with your request</p>
+         )}
          <ReactFormInput
             id="username"
             name="username"
@@ -43,6 +54,7 @@ const RegisterForm: React.FC = () => {
          <button className="fullWidth" type="submit" disabled={isLoading}>
             SignUp
          </button>
+         {toastMessage && toastMessage}
       </form>
    );
 };
