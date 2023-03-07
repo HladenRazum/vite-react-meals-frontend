@@ -1,10 +1,11 @@
 import { SubmitHandler, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import validationSchema, { FormData } from "./validationSchema";
 import useRegister from "./useRegister";
+import validationSchema, { FormData } from "./validationSchema";
+import ReactFormInput from "../../../components/ReactFormInput/ReactFormInput";
 
 const RegisterForm: React.FC = () => {
-   const { sendRequest, isLoading, error, responseData } = useRegister();
+   const { sendRequest, isLoading, error } = useRegister();
    const {
       register,
       handleSubmit,
@@ -24,29 +25,21 @@ const RegisterForm: React.FC = () => {
       <form className="form" onSubmit={handleSubmit(onSubmit)}>
          {isLoading ? <p className="test">Loading...</p> : null}
          {error ? <p className="test">{error}</p> : null}
-
-         <div className="formGroup">
-            <label htmlFor="username">Username</label>
-            <input
-               type="text"
-               placeholder="username"
-               autoComplete="off"
-               {...register("username")}
-               id="username"
-            />
-            <p className="error">{errors.username?.message}</p>
-         </div>
-         <div className="formGroup">
-            <label htmlFor="password">Password</label>
-            <input
-               type="text"
-               placeholder="password"
-               autoComplete="off"
-               {...register("password")}
-               id="password"
-            />
-            <p className="error">{errors.password?.message}</p>
-         </div>
+         <ReactFormInput
+            id="username"
+            name="username"
+            label="Username"
+            register={register}
+            error={errors.username}
+         />
+         <ReactFormInput
+            id="password"
+            name="password"
+            label="Password"
+            type="password"
+            register={register}
+            error={errors.password}
+         />
          <button className="fullWidth" type="submit" disabled={isLoading}>
             SignUp
          </button>

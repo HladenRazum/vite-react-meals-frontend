@@ -1,11 +1,9 @@
 import * as yup from "yup";
 
-const validationSchema = yup
-   .object({
-      username: yup.string().required(),
-      password: yup.string().required(),
-   })
-   .required();
+const validationSchema = yup.object({
+   username: yup.string().required(),
+   password: yup.string().required(),
+});
 
 export type FormData = yup.InferType<typeof validationSchema>;
 
