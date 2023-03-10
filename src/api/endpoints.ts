@@ -4,6 +4,9 @@ const ENDPOINTS = {
    USER: {
       CreateUser: `${BASE_URL}/users/`,
    },
+   AUTH: {
+      validateEmail: `${BASE_URL}/auth/validate-email`,
+   },
 };
 
 export default ENDPOINTS;

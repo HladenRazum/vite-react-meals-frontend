@@ -3,9 +3,9 @@ import { useMutation } from "react-query";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import validationSchema, { FormData } from "./validationSchema";
+import { UserRequestObjectType } from "../types/userRequestObject.type";
 import ReactFormInput from "../../../components/ReactFormInput/ReactFormInput";
 import userAPI from "../../../api/user.api";
-import { UserRequestObjectType } from "../types/userRequestObject.type";
 
 const RegisterForm: React.FC = () => {
    const [serverValidationError, setServerValidationError] = useState<
