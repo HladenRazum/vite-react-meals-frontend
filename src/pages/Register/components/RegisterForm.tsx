@@ -6,36 +6,79 @@ import ReactFormInput from "../../../components/ReactFormInput/ReactFormInput";
 import userAPI from "../../../api/user.api";
 import { useState } from "react";
 
+type User = {
+   email: string;
+   username: string;
+   password: string;
+};
+
 const RegisterForm: React.FC = () => {
-   const [toastMessage, setToastMessage] = useState("");
+   const [serverValidationError, setServerValidationError] = useState<
+      null | string
+   >(null);
+   const [successMessage, setSuccessMessage] = useState<null | string>(null);
+
+   const { mutate, isError } = useMutation(
+      (user: { user: User }) => userAPI.register(user),
+      {
+         onSuccess: (data: any) => {
+            if (data.user) {
+               // Successfully registered
+               // We now receive user object
+               setSuccessMessage("Successfully registered!");
+            } else if (data.data.message) {
+               // We've got some error as message
+               // console.log(data.data.message);
+               setServerValidationError(data.data.message);
+            } else {
+               setServerValidationError("Something went wrong");
+            }
+         },
+         onError: (err: any) => {
+            setServerValidationError(err.toString());
+         },
+      }
+   );
 
    const {
       register,
       handleSubmit,
       reset,
+      setError,
       formState: { errors },
    } = useForm<FormData>({
       resolver: yupResolver(validationSchema),
       mode: "onSubmit",
    });
 
-   const { mutate, isError, isLoading } = useMutation(userAPI.register, {
-      onSuccess: () => {
-         setToastMessage("Successfully registered");
-      },
-   });
+   const onSubmit: SubmitHandler<FormData> = ({
+      username,
+      password,
+      email,
+   }) => {
+      setSuccessMessage(null);
+      setServerValidationError(null);
 
-   const onSubmit: SubmitHandler<FormData> = ({ username, password }) => {
-      mutate({ username, password });
-      reset();
+      const userData = {
+         user: {
+            username,
+            password,
+            email,
+         },
+      };
+
+      mutate(userData);
    };
 
    return (
       <form className="form" onSubmit={handleSubmit(onSubmit)}>
-         {isLoading && <p>Loading...</p>}
-         {isError && (
-            <p className="error">There was an error with your request</p>
-         )}
+         <ReactFormInput
+            id="email"
+            name="email"
+            label="Email"
+            register={register}
+            error={errors.email}
+         />
          <ReactFormInput
             id="username"
             name="username"
@@ -51,10 +94,11 @@ const RegisterForm: React.FC = () => {
             register={register}
             error={errors.password}
          />
-         <button className="fullWidth" type="submit" disabled={isLoading}>
+         <button className="fullWidth" type="submit" disabled={false}>
             SignUp
          </button>
-         {toastMessage && toastMessage}
+         {serverValidationError && <p>{serverValidationError}</p>}
+         {successMessage && <p>{successMessage}</p>}
       </form>
    );
 };

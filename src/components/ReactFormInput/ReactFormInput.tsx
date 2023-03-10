@@ -28,7 +28,7 @@ const ReactFormInput: React.FC<ReactFormInputType> = ({
             placeholder={label}
             {...register(name)}
             {...inputProps}
-            autoComplete="off"
+            // autoComplete="off"
          />
          {error && <p className="error">{error.message}</p>}
       </div>

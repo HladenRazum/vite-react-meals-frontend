@@ -1,21 +1,14 @@
+import axios, { AxiosError } from "axios";
+import { User } from "../types/user.type";
 import ENDPOINTS from "./endpoints";
 
-const register = async (user: any) => {
-   const response = await fetch(ENDPOINTS.USER.CreateUser, {
-      method: "POST",
-      body: JSON.stringify(user),
-      headers: {
-         "Content-Type": "Application/json",
-      },
-   });
-
-   if (!response.ok) {
-      throw new Error("Network response failed");
+const register = async (user: { user: User }) => {
+   try {
+      const response = await axios.post(ENDPOINTS.USER.CreateUser, user);
+      return response.data;
+   } catch (error: any) {
+      return error.response;
    }
-
-   const data = response.json();
-
-   return data;
 };
 
 const userAPI = {
