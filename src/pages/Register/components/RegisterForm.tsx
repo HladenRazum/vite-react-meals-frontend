@@ -1,16 +1,11 @@
+import { useState } from "react";
 import { useMutation } from "react-query";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import validationSchema, { FormData } from "./validationSchema";
 import ReactFormInput from "../../../components/ReactFormInput/ReactFormInput";
 import userAPI from "../../../api/user.api";
-import { useState } from "react";
-
-type User = {
-   email: string;
-   username: string;
-   password: string;
-};
+import { UserRequestObjectType } from "../types/userRequestObject.type";
 
 const RegisterForm: React.FC = () => {
    const [serverValidationError, setServerValidationError] = useState<
@@ -18,17 +13,13 @@ const RegisterForm: React.FC = () => {
    >(null);
    const [successMessage, setSuccessMessage] = useState<null | string>(null);
 
-   const { mutate, isError } = useMutation(
-      (user: { user: User }) => userAPI.register(user),
+   const { mutate } = useMutation(
+      (user: UserRequestObjectType) => userAPI.register(user),
       {
          onSuccess: (data: any) => {
             if (data.user) {
-               // Successfully registered
-               // We now receive user object
                setSuccessMessage("Successfully registered!");
             } else if (data.data.message) {
-               // We've got some error as message
-               // console.log(data.data.message);
                setServerValidationError(data.data.message);
             } else {
                setServerValidationError("Something went wrong");
@@ -43,8 +34,6 @@ const RegisterForm: React.FC = () => {
    const {
       register,
       handleSubmit,
-      reset,
-      setError,
       formState: { errors },
    } = useForm<FormData>({
       resolver: yupResolver(validationSchema),
@@ -59,7 +48,7 @@ const RegisterForm: React.FC = () => {
       setSuccessMessage(null);
       setServerValidationError(null);
 
-      const userData = {
+      const userData: UserRequestObjectType = {
          user: {
             username,
             password,
@@ -95,7 +84,7 @@ const RegisterForm: React.FC = () => {
             error={errors.password}
          />
          <button className="fullWidth" type="submit" disabled={false}>
-            SignUp
+            {"SignUp"}
          </button>
          {serverValidationError && <p>{serverValidationError}</p>}
          {successMessage && <p>{successMessage}</p>}
