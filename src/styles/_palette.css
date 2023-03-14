@@ -36,15 +36,15 @@
    --icon-fillColor: var(--black);
    --accent-color: #ffc600;
    --inactive-color: #d5d5d5;
-   --navLink-color: #b06b03;
-   --navLink-hover-color: #ff9700;
+   --navLink-color: #4b59fa;
+   --navLink-hover-color: #121a71;
    --label-textColor: rgb(112 6 243);
 }
 
 :root .dark {
-   --primary-bgColor: #27272a;
+   --primary-bgColor: #1a1a1a;
    --primary-textColor: #d7dac0;
-   --secondary-bgColor: #161414;
+   --secondary-bgColor: #2c2c2c;
    --paper-bgColor: var(--black);
    --error-textColor: var(--lightRed);
    --error-bgColor: var(--darkRed);
@@ -60,9 +60,9 @@
    --icon-fillColor: rgb(24, 225, 247);
    --accent-color: #45b800;
    --inactive-color: #515454;
-   --navLink-color: #c733a9;
+   --navLink-color: #ff579a;
    --navLink-hover-color: #ff15d0;
-   --label-textColor: #6a7dff;
+   --label-textColor: #00bbff;
 }
 
 :root .high-contrast {
