@@ -1,4 +1,6 @@
 .UserProfile {
    display: flex;
+   gap: var(--flex-gap);
    // background-color: var(--secondary-bgColor);
+   height: 60vh;
 }

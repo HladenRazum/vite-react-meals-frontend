@@ -1,7 +1,17 @@
+import classes from "./SideBar.module.scss";
+
 const SideBar: React.FC = () => {
    return (
-      <aside>
-         <h5>Sidebar</h5>
+      <aside className={classes.SideBar}>
+         <button>Log out</button>
+         <br />
+         <br />
+         <button>Download personal information</button>
+         <br />
+         <br />
+         <button>Delete account</button>
+         <br />
+         <br />
       </aside>
    );
 };

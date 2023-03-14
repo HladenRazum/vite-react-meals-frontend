@@ -1,8 +1,9 @@
 import userProfileImage from "../../../../../assets/user-profile.jpg";
+import classes from "./PersonalDetailsHeader.module.scss";
 
 const PersonalDetailsHeader: React.FC = () => {
    return (
-      <header>
+      <header className={classes.PersonalDetailsHeader}>
          <img src={userProfileImage} width={100} />
          <div>
             <h4>John Doe</h4>

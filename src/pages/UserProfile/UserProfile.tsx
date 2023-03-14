@@ -8,7 +8,9 @@ const UserProfile: React.FC = () => {
       <PageWrapper title="User Profile">
          <div className={classes.UserProfile}>
             <SideBar />
-            <PersonalDetails />
+            <div>
+               <PersonalDetails />
+            </div>
          </div>
       </PageWrapper>
    );
