@@ -28,7 +28,7 @@
    --primary-darken: var(--darkerBlue);
    --btn-textColor: var(--lightBlue);
    --border-color: var(--transparent-grey);
-   --input-bgColor: var(--secondary-bgColor);
+   --input-bgColor: var(--primary-bgColor);
    --input-textColor: var(--black);
    --input-placeholder-textColor: #7c7979;
    --heading-textColor: var(--myRed);
@@ -52,7 +52,7 @@
    --primary-darken: var(--darkerBlue);
    --btn-textColor: var(--lightBlue);
    --border-color: var(--transparent-grey);
-   --input-bgColor: #242323;
+   --input-bgColor: var(--primary-bgColor);
    --input-textColor: #c9e306;
    --input-placeholder-textColor: #525153;
    --heading-textColor: var(--myRed);
@@ -76,9 +76,9 @@
    --primary-darken: var(--darkerBlue);
    --btn-textColor: var(--lightBlue);
    --border-color: #3c043c;
-   --input-bgColor: var(--secondary-bgColor);
+   --input-bgColor: var(--primary-bgColor);
    --input-textColor: #2a000a;
-   --input-placeholder-textColor: #e9c2f0;
+   --input-placeholder-textColor: #9b9b9b;
    --heading-textColor: var(--myRed);
    --link-textColor: #00ffdc;
    --icon-fillColor: blue;
